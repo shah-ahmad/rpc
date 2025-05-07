@@ -1,0 +1,91 @@
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff6f61, #6a11cb, #38f9d7);
+    background-size: 300% 300%;
+    animation: backgroundShift 10s ease infinite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    margin: 0;
+    text-align: center;
+    padding: 20px;
+    color: #fff;
+  }
+
+  @keyframes backgroundShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  h1 {
+    font-family: 'Georgian', serif;
+    font-size: 3.5rem;
+    color: #ffffff;
+    text-shadow: 2px 2px #000000;
+    margin-bottom: 30px;
+  }
+
+  .choices {
+    margin: 30px 0;
+  }
+
+  button {
+    font-size: 2.5rem;
+    padding: 25px 40px;
+    margin: 15px;
+    border: none;
+    border-radius: 20px;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, background 0.3s ease;
+    font-family: Arial, sans-serif;
+  }
+
+  button:nth-child(1) {
+    background: linear-gradient(135deg, #ff4e50, #f9d423); /* Rock */
+  }
+
+  button:nth-child(2) {
+    background: linear-gradient(135deg, #24c6dc, #514a9d); /* Paper */
+  }
+
+  button:nth-child(3) {
+    background: linear-gradient(135deg, #ff758c, #ff7eb3); /* Scissors */
+  }
+
+  button:hover {
+    transform: scale(1.15);
+    filter: brightness(1.1);
+  }
+
+  #PlayerDisplay,
+  #ComputerDisplay,
+  #resultDisplay {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+  #resultDisplay {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffff00;
+    text-shadow: 1px 1px #000;
+    margin-top: 20px;
+  }
+
+  .hands {
+    font-size: 4.5rem;
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+  }
+
+  .hand-label {
+    font-size: 1rem;
+    margin-top: 10px;
+  }

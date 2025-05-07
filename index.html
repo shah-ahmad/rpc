@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rock Paper Scissors</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Georgian&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <h1>ROCK - PAPER - SCISSORS</h1>
+
+  <div class="choices">
+    <button onclick="playgame('Rock')">✊</button>
+    <button onclick="playgame('Paper')">✋</button>
+    <button onclick="playgame('Scissors')">✌️</button>
+  </div>
+
+  <div class="hands">
+    <div>
+      <div id="playerHand">❓</div>
+      <div class="hand-label">YOU</div>
+    </div>
+    <div>
+      <div id="computerHand">❓</div>
+      <div class="hand-label">COMPUTER</div>
+    </div>
+  </div>
+
+  <div id="PlayerDisplay">PLAYER: </div>
+  <div id="ComputerDisplay">COMPUTER: </div>
+  <div id="resultDisplay">CHOOSE TO START</div>
+
+  <script src="script.js"></script>
+</body>
+</html>
